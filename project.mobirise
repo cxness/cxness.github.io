@@ -1,0 +1,157 @@
+{
+  "settings": {
+    "name": "exness",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12",
+    "imageResize": true,
+    "favicon": "@PROJECT_PATH@/assets/images/exness-128x128.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://cxness.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://cxness.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "h4bbbze0pu",
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Exness Login - Log In To Your Exness Account Securely",
+        "meta_descr": "Exness Login page. Log in to your Exness account and access your personal area for an efficient and secure trading experience.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/exness.png\" alt=\"exness\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "vAQgJDFFcr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"11\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h1 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Exness Login: A Complete Guide to Secure Account Access, Trading, and Account Management</b></h1>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Online trading has become increasingly accessible as digital platforms allow users to monitor financial markets, manage accounts, and access trading tools through computers and smartphones. Among the names in the online trading industry, Exness is a broker known for providing access to financial markets through its trading services and account-management platform.<br><br>For existing users, the <a href=\"https://cxness.github.io/\" class=\"text-primary\">Exness login</a> process is an important first step toward accessing their accounts. Whether someone wants to review account information, manage payment options, check trading activity, or use a supported trading platform, understanding the login process can make account management easier.<br><br>Exness provides a central dashboard known as the Personal Area (PA). Users can access it through the official website and supported applications. From this dashboard, they can manage trading accounts, review verification details, adjust security settings, and access other account features.<br><br>This guide explains how Exness login works, how to access the Personal Area, how to recover a forgotten password, and how to troubleshoot common login problems. It also covers important security practices that can help users protect their accounts.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Is Exness?</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Exness is an online multi-asset broker that provides trading services through supported platforms and account types. Depending on the user's region and account eligibility, its services may include access to forex and other financial instruments through contracts for difference (CFDs).<br><br>The platform provides tools designed to help users access market information and manage trading activities. These may include trading terminals, account dashboards, market charts, and payment-management features.<br><br>An Exness account generally includes access to a Personal Area. This is the central location where users can manage their account settings and trading accounts.<br><br>It is important to understand that creating an account and logging in do not guarantee access to every Exness service in every country. Availability depends on the applicable Exness entity, local regulations, and the user's location. Exness does not offer services to residents of certain jurisdictions, including the United States. Users should check the official eligibility information before attempting to register or trade.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Is Exness Login?</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Exness login is the process of securely accessing an existing Exness account. It allows registered users to enter their Personal Area and use the account-management features available to them.<br><br>The Personal Area is different from an individual trading account. The Personal Area uses the registered email address and its own password, while certain external trading platforms may require separate trading-account credentials.<br><br>After successfully logging in, users may be able to:<br>View their trading accounts.<br>Manage account settings.<br>Review identity-verification status.<br>Access supported trading platforms.<br>Manage available deposit and withdrawal options.<br>Change security settings and passwords.<br>Create additional trading accounts, where available.<br>Review relevant account information.<br><br>The dashboard brings many account-management functions together in one place, making it easier for users to manage their relationship with the platform.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Log In to Your Exness Account</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Exness Personal Area login process is straightforward. Users should always begin by visiting the official Exness website rather than following unfamiliar links received through emails, advertisements, or social media.<br><br>Follow these general steps:<br><br>Step 1: Visit the official Exness website<br>Open your browser and navigate to the official Exness website. Look for the sign-in option and make sure the website address is genuine before entering personal information.<br><br>Step 2: Select the login option<br>Click the sign-in or login option to open the Personal Area login page.<br><br>Step 3: Enter your registered email address<br>Type the email address associated with your Exness account. The registered email address is your Personal Area username. Your trading account number is not used for this particular login.<br><br>Step 4: Enter your password<br><br>Carefully enter your Personal Area password. Passwords are case-sensitive, so check for typing mistakes and make sure Caps Lock is not enabled.<br><br>Step 5: Complete any required security verification<br><br>Depending on your account's security settings, Exness may ask you to complete an additional verification step.<br><br>Step 6: Access your Personal Area<br><br>Once your credentials and required verification are accepted, you should be able to access your account dashboard.<br><br>For safety, avoid saving your password on shared or public computers. Always sign out after using your account on a device that other people can access.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Access Exness on Mobile</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Many users prefer managing online accounts through smartphones because mobile devices make it convenient to access information while away from a computer.<br><br>Exness offers mobile access through its supported applications, including the Exness Trade app where available.<br><br>A typical mobile access process involves the following steps:<br>Open the official app installed on your smartphone.<br>Select the sign-in option.<br>Enter the registered email address and Personal Area password.<br>Complete any requested security verification.<br>Access the account features available in the application.<br><br>Users should download applications only through official sources. Before installing an app, check the publisher and verify that it is the genuine Exness application.<br><br>Keep your smartphone's operating system and applications updated. Avoid accessing your trading account through public or unsecured Wi-Fi networks whenever possible.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding the Exness Personal Area</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The Personal Area is more than a simple login dashboard. It is the central account-management section where registered users can access several important features.<br><br><b>Account Management</b><br>Users can review their available trading accounts and manage supported account settings. Depending on account eligibility, they may also be able to create additional trading accounts.<br><br><b>Verification Information</b><br>The Personal Area includes information about account verification. Users can review their verification status and follow the instructions for submitting required identity or address documents.<br><br><b>Payment Management</b><br>Supported users can access available payment options and manage deposits and withdrawals through the Personal Area. Payment methods, processing times, and limits can differ according to location and account conditions.<br><br><b>Security Settings</b><br>The security section allows users to manage login details and review available account-protection options. Users should regularly check these settings to help protect their account.<br><br><b>Trading Platform Access</b><br>The Personal Area can also provide access to supported trading platforms and account information. Users should understand which credentials are required for each platform before attempting to connect.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Exness Personal Area Login vs. MT4 and MT5 Login</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One common source of confusion among new users is the difference between Personal Area login and trading-platform login.<br><br>The Personal Area is used for general account management. It normally requires the registered email address and Personal Area password.<br><br>MetaTrader 4 (MT4) and MetaTrader 5 (MT5), where supported for a particular account, use trading-account details instead. These may include a trading account number, trading password, and the correct server.<br>The Personal Area password and trading password should not be assumed to be interchangeable. Users can find their trading account number and server details in the relevant account information section of their Personal Area.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Reset a Forgotten Exness Password</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Forgetting a password can prevent users from accessing their accounts. Fortunately, Exness provides a password-recovery process for the Personal Area.<br><br>If you cannot remember your login password, follow these steps:<br>Open the official Exness Personal Area login page.<br>Select the I forgot my password option.<br>Enter the email address registered with your account.<br>Continue with the recovery instructions.<br>Complete the security verification required for your account.<br>Create a new password that meets the displayed requirements.<br><br>Choose a password that is difficult to guess and has not been used on another website.<br><br>Exness distinguishes between Personal Area passwords, trading passwords, and read-only access passwords. If you are unable to log in to MT4 or MT5, you may need to reset the trading password for the relevant trading account rather than changing the Personal Area password.<br><br>Never share password-reset codes or verification messages with another person.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Common Exness Login Problems and Their Solutions</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Sometimes users may experience login difficulties even when they believe their account information is correct. Understanding common causes can help resolve these problems.<br><br><b>Incorrect Email Address:</b><br>The Personal Area username is the registered email address. Entering a trading account number or an incorrect email address can result in a failed login.<br>Check the spelling of your email address and make sure there are no additional spaces.<br><br><b>Incorrect Password:</b><br>Passwords are case-sensitive. Check for typing errors, capitalization mistakes, or an incorrect keyboard language.<br>If you are unsure of the password, use the official recovery process instead of repeatedly guessing.<br><br><b>Verification Code Problems:</b><br>Some accounts require additional security verification. If you do not receive a verification code, check your registered email or phone, including spam and junk folders.<br>Make sure your registered contact details are still accessible. Do not share verification codes with anyone.<br><br><b>Browser Issues:</b><br>An outdated browser or stored website data may sometimes interfere with login.<br>You can try:<br>Clearing your browser cache and cookies.<br>Updating your browser.<br>Opening the website in a private or incognito window.<br>Trying another supported browser.<br>Checking your internet connection.<br>Account Restrictions or Termination<br><br>Some account-access problems may relate to account status rather than incorrect login details. For example, a terminated Personal Area may not be recoverable.<br><br>If the issue continues, consult the official Exness Help Center or contact support through the verified website.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Important Security Tips for Exness Login</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Account security should be a priority whenever users access financial services online. A compromised account may expose personal information and create risks for funds and trading activity.<br><br>Consider the following practices:<br><b>Use a strong password:</b> Create a unique password that combines uppercase and lowercase letters, numbers, and special characters where supported.<br><br><b>Enable additional security:</b> Use the available two-step verification options to add protection to your account.<br><br><b>Protect your email account:</b> Your registered email is important for account communication and password recovery. Secure it with a strong password and additional authentication.<br><br><b>Avoid suspicious links:</b> Do not enter login details on websites reached through unexpected messages or unofficial advertisements.<br><br><b>Never share verification codes:</b> Passwords, one-time passwords, and security codes should remain private.<br><br><b>Review account activity:</b> Pay attention to unfamiliar login alerts, unexpected verification requests, or changes to your account settings.<br><br><b>Log out on shared devices:</b> Always sign out when using a computer or phone that is not exclusively yours.<br>If you suspect unauthorized access, change your passwords, review security settings, end unfamiliar sessions where possible, and contact official support.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Is Exness Login Safe?</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The safety of an online account depends on both the platform's security measures and the user's own behavior.<br><br>Exness provides account-security features, including password management and additional verification options. However, users must also take responsibility for protecting their login information and devices.<br><br>A secure login process cannot eliminate every risk. Phishing websites, malicious software, compromised email accounts, and password reuse can all create security problems.<br><br>Always access Exness through its verified website or official applications. If a message asks you to provide a password or unexpected verification code, treat it with caution and confirm the request through official support channels.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Understanding the Exness Login Process</b></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Learning how Exness login works can make account management easier and help users avoid common mistakes.<br><br>First, it helps users distinguish between their Personal Area credentials and trading-platform credentials. Second, it makes password recovery less confusing when access problems occur. Third, understanding the dashboard allows users to find account settings, verification information, and supported trading features more efficiently.<br><br>Most importantly, good login habits can reduce the likelihood of unauthorized account access.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Exness login is the main access point for registered users who want to manage their Personal Area and supported trading accounts. By using the correct registered email address, password, and required verification method, users can access account-management features through supported devices.<br><br>Understanding the difference between Personal Area login and MT4 or MT5 credentials is particularly important. Users should also know how to reset forgotten passwords and resolve common browser or verification problems.<br><br>Security should remain a priority throughout the process. Strong passwords, additional verification, official applications, and careful handling of security codes can help protect account access.<br><br>Before registering or attempting to trade, users should check whether Exness services are available in their jurisdiction. Trading CFDs and leveraged products involves substantial risk and can result in the loss of invested capital. Always understand the risks and seek independent financial advice if needed.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "vAQgJRawkD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
